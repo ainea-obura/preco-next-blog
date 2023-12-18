@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link'; 
 
 const Home = () => {
   const router = useRouter();
@@ -61,9 +62,9 @@ const Home = () => {
   return (
     <div>
       <h2>Blogs</h2>
-      {/* <Link href="/create_blog">
-        <a>Create Blog</a> 
-      </Link> */}
+      <Link href="/create_blog">
+    Create Blog 
+      </Link>
       <ul>
         {blogs.map((blog) => (
           <li key={blog.id}>
