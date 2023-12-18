@@ -61,9 +61,9 @@ const Home = () => {
   return (
     <div>
       <h2>Blogs</h2>
-      <Link href="/create_blog">
+      {/* <Link href="/create_blog">
         <a>Create Blog</a> 
-      </Link>
+      </Link> */}
       <ul>
         {blogs.map((blog) => (
           <li key={blog.id}>
